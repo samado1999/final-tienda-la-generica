@@ -5,21 +5,20 @@ export default class Productos extends Component {
   render() {
     return (
       <div className="producto-container">
-        <p>
-          <b>CARGA DE PRODUCTOS</b>
-        </p>
-        <div class="botones" id="botones">
-          <button class="boton-subir-archivo" id="boton-subir-archivo">
-            <input type="file" name="fileupload" id="fileupload" />
-          </button>
-          <button class="boton-publicar" id="boton-publicar">
-            <input
-              type="submit"
-              value="Upload csv"
-              name="submit"
-              onclick="cargarArchivo()"
-            />
-          </button>
+        <div className="row">
+          <div className="col-md-auto mx-auto">
+            <p>
+              <b>CARGA DE PRODUCTOS</b>
+            </p>
+            <div className="botones">
+              <button className="boton-subir-archivo">
+                <input type="file" name="fileupload" />
+              </button>
+              <button className="boton-publicar">
+                <input type="submit" value="Upload csv" name="submit" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     );

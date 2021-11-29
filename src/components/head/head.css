@@ -1,5 +1,8 @@
 .title-color {
-    background-color: #1C9CD8;
-    color: #fff;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+  background-color: #1c9cd8;
+  color: #fff;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }

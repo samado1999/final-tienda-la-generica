@@ -11,6 +11,7 @@ import Cliente from "../clientes/clientes";
 import Venta from "../ventas/ventas";
 import Reporte from "../reportes/reportes";
 import Consolidado from "../consolidado/consolidado";
+import Login from "../login/login";
 
 import "./Navbar.css";
 
@@ -21,7 +22,7 @@ export default class Menu extends Component {
         <div className="vertical-menu">
           <ul className="menu">
             <li>
-              <NavLink to="/" className="" activeclass="active">
+              <NavLink to="/login" className="" activeclass="active">
                 Inicio
               </NavLink>
             </li>
@@ -68,7 +69,7 @@ export default class Menu extends Component {
             caseSensitive={true}
             element={<Consolidado />}
           />
-          <Route path="/" />
+          <Route path="/login" caseSensitive={true} element={<Login />} />
         </Routes>
       </Router>
     );

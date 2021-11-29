@@ -1,7 +1,9 @@
 .producto-container {
   margin-left: 25%;
-  padding: 1px 16px;
-  height: 1000px;
+  padding: 100px 50px 0 50px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
 }
 * {
   box-sizing: border-box;
